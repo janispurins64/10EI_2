@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+komentāri
+-->
+<html>
+    <head>
+        <title>10EI Web-1 Spēle</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="mans_stils.css">
+        <script type="text/javascript" charset="UTF-8" src="mani.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Jauna spēle</h1>
+        <nav>
+            <a href="spele.html">Noteikumi</a> |
+            <a href="jauna_spele.html">Jauna spēle</a> |
+            <a href="iestatijumi.html">Iestatījumi</a>
+        </nav>
+        <div class="meklet-burtu"> <!--Konteiners virsrakstam Meklē burtu: XX-->
+
+        </div>
+        <div> <!--Konteiners dzīvībām-->
+            <p>Dzīvību skaits: </p>
+            <div class="dziviba"></div>
+        </div>
+        <div> <!--Melējamais burts-->
+            <div class="mekle">Meklē burtu:</div>
+            <div class="mekle-burtu">S</div>
+        </div>
+
+        <div class="visas-pogas"> <!--Konteiners pogām-->
+            <form class="pogas-pogas"> <!--Pogas veidojam manuāli -->
+                <button type="button" class="poga1" id="p1" onclick="clickPoga2(id)">A</button>
+                <button type="button" class="poga1" id="p2" onclick="clickPoga2(id)">S</button>
+                <button type="button" class="poga1" id="p3" onclick="clickPoga2(id)">G</button>
+                <button type="button" class="poga1" id="p4" onclick="clickPoga2(id)">J</button>
+                <button type="button" class="poga1" id="p5" onclick="clickPoga2(id)">A</button>
+                <button type="button" class="poga1" id="p6" onclick="clickPoga2(id)">D</button>
+                <button type="button" class="poga1" id="p7" onclick="clickPoga2(id)">D</button>
+                <button type="button" class="poga1" id="p8" onclick="clickPoga2(id)">T</button>
+                <button type="button" class="poga1" id="p9" onclick="clickPoga2(id)">S</button>
+            </form>
+        </div>
+    </body>
+</html>

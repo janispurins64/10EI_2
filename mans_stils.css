@@ -1,0 +1,47 @@
+* {
+    background-color: aqua;
+    font-size: 14pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#Noteikumi1 {
+    font-size: 24pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: blueviolet;
+}
+
+.domas {
+    border: 2pt;
+    border-style: double;
+    background-color: chartreuse ;
+}
+.visas-pogas {
+    height: 120pt;
+    width:  120pt;
+    border: 4pt thin rgb(23, 139, 0);
+    border-radius: 2pt;
+    margin: 20pt 20pt 20pt 20pt;
+    background-color: rgb(200, 139, 0);
+}
+
+.poga1 {
+    height: 30pt;
+    width:  30pt;
+    border: 2pt thin darkred;
+}
+.poga1 .domas {
+    font-size: 60pt;
+}
+.nospiesta-poga {
+    height: 30pt;
+    width:  30pt;
+    background-color: rgb(37, 200, 0);
+}
+.mekle {
+    width:  50%;
+}
+.slikta-poga {
+    height: 30pt;
+    width:  30pt;
+    background-color: rgb(200, 63, 0);
+}
