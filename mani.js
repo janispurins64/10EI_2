@@ -89,7 +89,13 @@ const clickPoga2 = (p_id) => {
         nosPoga.setAttribute("class","slikta-poga");
         pu = pu - 5;
         const punkturamis = document.querySelector(".punkti");
-        punkturamis.innerHTML = "Punkti: " + String(pu);                   
+        punkturamis.innerHTML = "Punkti: " + String(pu);
+        if(pu==0)
+        {
+            clearInterval(t);
+            alert("Spēle beigusies!!!!");
+            //Paslēpt pogas
+        }                  
     }
     else {
         console.log("Skaits:");
