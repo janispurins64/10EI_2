@@ -1,5 +1,9 @@
 var dzi = 6;
 var dzi_cur = 6;
+const t_laiks = 100;
+var laiks2;
+var t;
+var pu = 0;
 //Izsaucam sākuma funkcijas
 window.onload = () => {
     dzivibas(dzi);
@@ -10,6 +14,21 @@ window.onload = () => {
     console.log(g_index);
     const meklePogu1 = document.querySelector('#p'+String(g_index));
     mekleBurts.innerHTML = meklePogu1.innerHTML;
+    //Meklējam taimera rāmi
+    const taimeraramis = document.querySelector(".taimeris");
+    taimeraramis.innerHTML = String(laiks2);
+    laiks2 = t_laiks;
+    t = setInterval(taimeraApstrade, 100);
+}
+//Taimera notikuma apstrāde
+function taimeraApstrade() {
+    laiks2--;
+    const taimeraramis = document.querySelector(".taimeris");
+    taimeraramis.innerHTML = String(laiks2);
+    if(laiks2==0) {
+        clearInterval(t);
+        alert("Spēle beigusies!!!!");
+    }
 }
 //Pogu nosaukumi
 const poguBurti = () => {    
@@ -67,12 +86,18 @@ const clickPoga2 = (p_id) => {
         console.log("Dzēšam dzīvību");
         console.log("Skaits:");
         console.log(bernu_skaits);
-        nosPoga.setAttribute("class","slikta-poga");          
+        nosPoga.setAttribute("class","slikta-poga");
+        pu = pu - 5;
+        const punkturamis = document.querySelector(".punkti");
+        punkturamis.innerHTML = "Punkti: " + String(pu);                   
     }
     else {
         console.log("Skaits:");
         console.log(bernu_skaits);
-        nosPoga.setAttribute("class","nospiesta-poga");   
+        nosPoga.setAttribute("class","nospiesta-poga"); 
+        pu = pu + 30;
+        const punkturamis = document.querySelector(".punkti");
+        punkturamis.innerHTML = "Punkti: " + String(pu);  
     }
 
 
