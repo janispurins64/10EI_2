@@ -3,9 +3,13 @@ var dzi_cur = 6;
 //Izsaucam sākuma funkcijas
 window.onload = () => {
     dzivibas(dzi);
-    const mekleBurts = document.querySelector(".mekle-burtu");
-    mekleBurts.innerHTML = ranBurts();
     poguBurti();
+    // Izvēlēsimies melējamo burtu
+    const mekleBurts = document.querySelector(".mekle-burtu");
+    let g_index = parseInt(Math.random() * 8)+1;
+    console.log(g_index);
+    const meklePogu1 = document.querySelector('#p'+String(g_index));
+    mekleBurts.innerHTML = meklePogu1.innerHTML;
 }
 //Pogu nosaukumi
 const poguBurti = () => {    
@@ -20,7 +24,6 @@ const poguBurti = () => {
 //Pogu masīva izveide
 const visasPogas = () =>{
     for(let i=0; i<32; i++) jaunaPoga(i);
-
 }
 //Gadījuma burts
 const ranBurts = () =>{
